@@ -1,6 +1,7 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 def groceries(grocery_list)
+  grocery_list = grocery_list.sort
   grocery_list.each do |item|
     puts "* #{item}"
   end
@@ -24,3 +25,5 @@ def check_list()
 end
 
 check_list()
+
+puts "the second item on the list is #{grocery_list[1]}"
