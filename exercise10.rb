@@ -30,3 +30,13 @@ students.each do |cohort, amount|
 end
 
 puts total
+
+staff = {
+  :term1 => 5,
+  :term2 => 3,
+  :term3 => 2
+}
+
+staff.each do |term, amount|
+  puts "#{term}: #{amount}"
+end
