@@ -10,4 +10,11 @@ end
 
 students[:cohort4] = 43
 
-puts students.keys 
+puts students.keys
+
+students.each do |cohort, amount|
+  new_amount = amount * 1.05
+  students[cohort] = new_amount.to_i
+end
+
+puts students
