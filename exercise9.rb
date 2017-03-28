@@ -6,4 +6,6 @@ def groceries(grocery_list)
   end
 end
 
+grocery_list << "rice"
+
 groceries(grocery_list)
