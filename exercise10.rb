@@ -18,3 +18,15 @@ students.each do |cohort, amount|
 end
 
 puts students
+
+students.delete(:cohort2)
+
+puts students
+
+total = 0
+
+students.each do |cohort, amount|
+  total += amount
+end
+
+puts total
