@@ -1,6 +1,6 @@
 my_dogs = [
   { :name => 'Ralph', :position => 5 },
-  { :name => 'Cindy', :position => 8 },
+  { :name => 'Cindy', :position => 12 },
   { :name => 'Jade', :position => 11 },
 ]
 
@@ -18,9 +18,10 @@ end
 
 puts get_absent_dog(my_dogs)
 
+def call_absent_dog(my_dogs)
+  get_absent_dog(my_dogs).each do |name|
+    puts "Come back, #{name}!"
+  end
+end
 
-
-
-# absent_dogs = my_dogs.select { |dog| dog[:position] > 10 }
-#
-# p absent_dogs
+call_absent_dog(my_dogs)
