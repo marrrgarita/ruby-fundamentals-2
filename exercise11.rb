@@ -24,4 +24,12 @@ def call_absent_dog(my_dogs)
   end
 end
 
+neighbours_dogs = [
+  { :name => 'Noey', :position => 8 },
+  { :name => 'Hunter', :position => 1 },
+  { :name => 'Barkley', :position => 11 },
+]
+
+
 call_absent_dog(my_dogs)
+call_absent_dog(neighbours_dogs)
